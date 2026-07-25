@@ -72,42 +72,42 @@ header nav ul li a {
 }
 
 /* Productos en una sola columna */
-.products-grid {
+.productos {
     display: grid !important;
     grid-template-columns: 1fr !important;
     gap: 1.2rem !important;
     padding: 0 !important;
 }
 
-.product-card {
+.producto {
     max-width: 100% !important;
 }
 
 /* Imágenes fluidas */
-.product-card img {
+.producto img {
     width: 100%;
     height: 200px;
     border-radius: 8px 8px 0 0 !important;
 }
 
 /* Ajustes de fuentes en móviles */
-.product-card h3 {
+.producto h3 {
     font-size: 1.05rem;
     padding: 12px 12px 6px !important;
 }
 
-.product-card .description {
+.producto .description {
     font-size: 0.85rem;
     padding: 0 12px 8px !important;
 }
 
-.product-card .price {
+.producto .precio {
     font-size: 1.4rem;
     padding: 8px 12px !important;
 }
 
 /* Botones en móviles */
-.product-card .btn {
+.producto .btn {
     width: calc(100% - 24px) !important;
     padding: 10px !important;
     margin: 8px 12px 12px !important;
@@ -136,7 +136,7 @@ header nav ul li a {
 }
 
 /* Section padding */
-.products-section {
+.productos {
     padding: 2rem 0 !important;
 }
 
@@ -166,12 +166,12 @@ header nav ul li a {
     }
 
     /* 2 columnas de productos */
-    .products-grid {
+    .productos {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 1.8rem !important;
     }
 
-    .product-card {
+    .producto {
         width: 100% !important;
         max-width: none !important;
     }
@@ -207,15 +207,15 @@ header nav ul li a {
     }
 
     /* Ajustes en fuentes */
-    .product-card h3 {
+    .producto h3 {
         font-size: 1.15rem;
     }
 
-    .product-card .description {
+    .producto .description {
         font-size: 0.9rem;
     }
 
-    .product-card .price {
+    .producto .precio {
         font-size: 1.5rem;
     }
 
@@ -265,14 +265,14 @@ header nav ul li a {
     }
 
     /* CSS Grid para Desktop 4 columnas */
-    .products-grid {
+    .productos {
         display: grid !important;
-        grid-template-columns: repeat(5, 1fr) !important;
+        grid-template-columns: repeat(3, 1fr) !important;
         gap: 2rem !important;
         padding: 1rem 0 !important;
     }
 
-    .product-card {
+    .producto {
         width: 100% !important;
         max-width: none !important;
     }
@@ -308,30 +308,30 @@ header nav ul li a {
     }
 
     /* Tipografía Desktop */
-    .product-card h3 {
+    .producto h3 {
         font-size: 1.25rem;
         padding: 16px 15px 8px !important;
     }
 
-    .product-card .description {
+    .producto .description {
         font-size: 0.9rem;
         padding: 0 15px 10px !important;
     }
 
-    .product-card .price {
+    .producto .precio {
         font-size: 1.6rem;
         padding: 12px 15px !important;
     }
 
     /* Botones Desktop */
-    .product-card .btn {
+    .producto .btn {
         padding: 12px !important;
         font-size: 1rem !important;
         margin: 10px 15px 15px !important;
         width: calc(100% - 30px) !important;
     }
 
-    .product-card .btn:hover {
+    .producto .btn:hover {
         background-color: #0056b3;
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -380,7 +380,7 @@ img {
 }
 
 /* Transiciones suaves */
-a, button, .product-card {
+a, button, .producto {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 

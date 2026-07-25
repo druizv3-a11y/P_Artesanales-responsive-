@@ -27,7 +27,7 @@ body{
   margin:28px auto; /* margin */
   padding:12px; /* padding */
   display:grid; /* layout */
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr; /* Base de 1 columna */
   gap:20px;
 }
 
@@ -75,4 +75,3 @@ body{
 }
 
 .site-footer{ text-align:center;padding:18px;color:#000000 }
-
