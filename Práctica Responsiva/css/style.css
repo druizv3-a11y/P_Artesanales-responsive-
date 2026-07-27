@@ -75,3 +75,34 @@ body{
 }
 
 .site-footer{ text-align:center;padding:18px;color:#000000 }
+/* Responsive */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-wrapper,
+    .cart-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .productos {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
