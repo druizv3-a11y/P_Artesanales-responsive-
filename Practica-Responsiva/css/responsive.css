@@ -1,5 +1,5 @@
-* ===========================
-   RESPONSIVE DESIGN - TechStore
+/* ===========================
+   RESPONSIVE DESIGN - Catalogo Box Model
    =========================== */
 
 /* ===== MOBILE FIRST (< 768px) ===== */
@@ -11,64 +11,6 @@ body {
 
 * {
     box-sizing: border-box;
-}
-
-/* Header en móviles */
-header {
-    padding: 1rem 0;
-}
-
-header .container {
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-header .logo {
-    width: 100%;
-    justify-content: center;
-}
-
-header .logo img {
-    height: 45px;
-    width: 45px;
-}
-
-header .logo h1 {
-    font-size: 1.4rem;
-}
-
-/* Menú vertical en móviles */
-header nav {
-    width: 100%;
-}
-
-header nav ul {
-    flex-direction: column;
-    gap: 0.3rem !important;
-}
-
-header nav ul li {
-    width: 100%;
-}
-
-header nav ul li a {
-    display: block;
-    padding: 0.7rem;
-    text-align: center;
-    font-size: 0.95rem;
-}
-
-/* Página Header Mobile */
-.page-header {
-    padding: 40px 1rem;
-}
-
-.page-header h1 {
-    font-size: 1.8rem;
-}
-
-.page-header p {
-    font-size: 0.95rem;
 }
 
 /* Productos en una sola columna */
@@ -96,43 +38,9 @@ header nav ul li a {
     padding: 12px 12px 6px !important;
 }
 
-.producto .description {
-    font-size: 0.85rem;
-    padding: 0 12px 8px !important;
-}
-
 .producto .precio {
     font-size: 1.4rem;
     padding: 8px 12px !important;
-}
-
-/* Botones en móviles */
-.producto .btn {
-    width: calc(100% - 24px) !important;
-    padding: 10px !important;
-    margin: 8px 12px 12px !important;
-    font-size: 0.9rem;
-}
-
-/* Contenedor general */
-.container {
-    width: 100% !important;
-    padding: 0 1rem !important;
-    margin: 0 auto !important;
-}
-
-/* Filter bar en móviles */
-.filter-bar {
-    margin-bottom: 1.5rem !important;
-    width: 100%;
-    justify-content: center !important;
-}
-
-.filter-bar select {
-    width: 100%;
-    max-width: 280px;
-    padding: 10px 12px !important;
-    font-size: 0.95rem;
 }
 
 /* Section padding */
@@ -142,29 +50,7 @@ header nav ul li a {
 
 /* ===== TABLETS (768px - 1023px) ===== */
 @media (min-width: 768px) and (max-width: 1023px) {
-    .container {
-        max-width: 740px !important;
-        padding: 0 1.5rem !important;
-    }
-
-    header .container {
-        gap: 1.5rem;
-    }
-
-    header .logo {
-        width: auto;
-        justify-content: flex-start;
-    }
-
-    header .logo img {
-        height: 48px;
-        width: 48px;
-    }
-
-    header .logo h1 {
-        font-size: 1.6rem;
-    }
-
+    
     /* 2 columnas de productos */
     .productos {
         grid-template-columns: repeat(2, 1fr) !important;
@@ -180,17 +66,6 @@ header nav ul li a {
     header nav ul {
         flex-direction: row !important;
         gap: 0.5rem !important;
-    }
-
-    header nav ul li {
-        width: auto;
-    }
-
-    header nav ul li a {
-        display: inline-block;
-        padding: 8px 12px;
-        text-align: center;
-        font-size: 0.95rem;
     }
 
     /* Page header tablet */
@@ -237,33 +112,9 @@ header nav ul li a {
 
 /* ===== DESKTOP (1024px+) ===== */
 @media (min-width: 1024px) {
-    .container {
-        max-width: 1200px !important;
-        margin: 0 auto !important;
-        padding: 0 2rem !important;
-    }
-
     header {
         padding: 1.3rem 0;
     }
-
-    header .container {
-        gap: 2rem;
-    }
-
-    header .logo {
-        width: auto;
-    }
-
-    header .logo img {
-        height: 55px;
-        width: 55px;
-    }
-
-    header .logo h1 {
-        font-size: 1.8rem;
-    }
-
     /* CSS Grid para Desktop 4 columnas */
     .productos {
         display: grid !important;
